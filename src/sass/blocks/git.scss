@@ -1,0 +1,171 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.git {
+    padding-top: 60px;
+
+    &__wrapper {
+        margin-top: 60px;
+    }
+
+    &__img {
+        display: none;
+    }
+
+    &__fieldset {
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__label {
+        display: block;
+        color: $dark;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 28px;
+
+
+        &:nth-child(2) {
+            margin-top: 8px;
+        }
+    }
+
+    &__input {
+        width: 100%;
+        height: 48px;
+        border: 1px solid rgb(226, 225, 229);
+        border-radius: 2px;
+        background: rgb(255, 255, 255);
+        padding: 10px 15px;
+
+        &:focus {
+            border: 1px solid $dark;
+            outline: $dark;
+        }
+
+        &::placeholder {
+            color: $ui-disabled;
+            font-size: 14;
+        }
+    }
+
+    &__textarea {
+        width: 100%;
+        height: 132px;
+        border: 1px solid rgb(226, 225, 229);
+        border-radius: 2px;
+        background: rgb(255, 255, 255);
+        resize: none;
+
+        &::placeholder {
+            color: $ui-disabled;
+            font-size: 14;
+        }
+    }
+
+    &__check-block {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 28px;
+
+        a {
+            color: rgb(162, 45, 198);
+            text-decoration: none;
+            margin-left: 3px;
+        }
+    }
+
+    &__checkbox {
+        // vertical-align: middle;
+        margin-right: 10px;
+        width: 15px;
+        height: 15px;
+    }
+
+    &__btn {
+        margin-top: 27px;
+
+    }
+
+    &__decor {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .git {
+        &__form {
+            position: relative;
+            width: 300px;
+            padding-left: 24px;
+        }
+
+        .container {
+            position: relative;
+        }
+
+        &__decor {
+            display: block;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .git {
+        &__img {
+            display: block;
+            width: 550px;
+            height: 342px;
+            object-fit: cover;
+            box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
+
+        }
+
+        &__input {
+            &:hover {
+                border: none;
+                outline: $dark;
+            }
+        }
+
+        &__form {
+            padding-left: 20px;
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .git {
+        &__img {
+            width: 100%;
+            height: 356px;
+        }
+
+        &__form {
+            width: auto;
+            padding-left: 143px;
+        }
+
+        &__fieldset {
+            display: flex;
+            column-gap: 45px;
+        }
+
+        &__label,
+        &__check-block,
+        &__input,
+        &__textarea {
+            width: 300px;
+        }
+
+        &__decor {
+            right: 75px;
+        }
+    }
+}

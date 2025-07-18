@@ -1,0 +1,123 @@
+.promo {
+    padding-top: 50px;
+    position: relative;
+
+    &__wrapper {
+        margin-top: 50px;
+    }
+
+    &__title {
+        padding: 0 6px;
+    }
+
+    &__img-btn {
+        margin-top: 40px;
+    }
+
+    &__img {
+        margin: 0 auto;
+        width: 270px;
+        height: 377px;
+        box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    &__btn {
+        margin: 18px auto 0 auto;
+    }
+
+    &__potter {
+        display: none;
+    }
+
+
+}
+
+@media screen and (min-width:768px) {
+    .promo {
+        &__wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__img {
+            width: 230px;
+            height: 321px;
+        }
+
+        &__img-btn {
+            margin-top: 0;
+        }
+
+        &__title {
+            padding: 250px 0 0 71px;
+            text-align: left;
+        }
+
+        &__potter {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .promo {
+        &__potter {
+            display: block;
+            position: absolute;
+            width: 450px;
+            height: 633px;
+            left: 0;
+            top: 0;
+        }
+
+        &__title {
+            padding: 250px 0 0 571px;
+            font-size: 24px;
+        }
+    }
+}
+
+// @media screen and (min-width:1200px) {
+//     .promo {
+//         &__btn:hover {
+//             color: $light;
+//             background-color: $dark;
+//         }
+
+//         &__btn:active {
+//             box-shadow: inset 0px 0px 10px 1px rgba(0, 0, 0, 0.4);
+//             background-color: $ui-active;
+//             color: $dark;
+//             border-color: transparent;
+//         }
+//     }
+// }
+
+@media screen and (min-width:1920px) {
+    .promo {
+        padding-top: 40px;
+
+        &__wrapper {
+            margin-top: 79px;
+        }
+
+        &__potter {
+            width: 640px;
+            height: 900px;
+        }
+
+        &__title {
+            padding: 384px 0 0 642px;
+        }
+
+        &__img {
+            width: 330px;
+            height: 460px;
+        }
+
+        &__btn {
+            margin: 50px auto 0 auto;
+        }
+
+    }
+}
