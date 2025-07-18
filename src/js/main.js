@@ -5,7 +5,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 
-import "src/sass/style.scss";
+import "/src/sass/style.scss";
 
 const burger = document.querySelector(".burger"),
     close = document.querySelector(".header__menu-close"),
